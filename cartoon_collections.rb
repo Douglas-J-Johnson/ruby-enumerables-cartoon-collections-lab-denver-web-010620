@@ -18,11 +18,16 @@ def long_planeteer_calls(planeteer_calls)
   end
 end
 
-def find_the_cheese(cheese)
+def find_the_cheese(array)
   found_index = nil
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  found_index = cheese_types.find_index(cheese)
-
+  for i in 0...cheese_types.length
+    found_index = array.find_index {|item| item == cheese_types[i]}
+    if found_index then
+      break
+    end
+  end
+  
   return found_index
 end
