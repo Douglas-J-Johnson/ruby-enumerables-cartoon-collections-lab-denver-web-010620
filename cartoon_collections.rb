@@ -1,5 +1,5 @@
 def roll_call_dwarves(dwarves)
-  dwarves.collect {|dwarf| puts dwarf}
+  dwarves.map.with_index {|dwarf, number| puts number + ".*" + dwarf}
 end
 
 def summon_captain_planet(planeteers)
