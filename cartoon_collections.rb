@@ -23,7 +23,7 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
   for i in 0...cheese_types.length
-    found_index = array.find_index {|item| item == cheese_types[i]}
+    found_index = array.find {|item| item == cheese_types[i]}
     if found_index then
       break
     end
