@@ -28,6 +28,6 @@ def find_the_cheese(array)
       break
     end
   end
-  
+
   return found_index
 end
