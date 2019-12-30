@@ -22,5 +22,7 @@ def find_the_cheese(cheese)
   found_index = nil
   cheese_types = ["cheddar", "gouda", "camembert"]
 
+  found_index = cheese_types.find_index(cheese)
+
   return found_index
 end
