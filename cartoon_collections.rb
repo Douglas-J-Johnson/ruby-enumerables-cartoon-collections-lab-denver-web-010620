@@ -5,6 +5,8 @@ end
 def summon_captain_planet(planeteers)
   planeteer_calls = []
 
+  planeteers.collect {|planeteer| (planeteer + "!").capitalize}
+  
   return planeteer_calls
 end
 
